@@ -1,0 +1,24 @@
+[package]
+name = "binance_api_async"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+derive_more = { version = "1.0.0", features = ["from"] }
+dotenv = "0.15.0"
+eframe = "0.29.1"
+egui = "0.29.1"
+egui_plot = "0.29.0"
+futures = "0.3.31"
+futures-core = "0.3.31"
+rand = "0.8.5"
+rust_decimal = "1.36.0"
+rustls = "0.23.17"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.133"
+sqlx = { version = "0.8.2", features = ["chrono", "postgres", "runtime-tokio", "rust_decimal"] }
+tokio = { version = "1.41.1", features = ["macros", "rt-multi-thread", "time"] }
+tokio-tungstenite = { version = "0.24.0", features = ["rustls-tls-native-roots"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
